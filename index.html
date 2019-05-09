@@ -9,7 +9,8 @@
 
 <body style='margin : 0px; overflow: hidden;'>
 
-<audio> <source autoplay loop src="sound/panthere.mp3" type="audio/mp3"/> </audio>
+<audio autoplay loop> <source src="sound/panthere.mp3" type="audio/mpeg">
+    <source src="sound/panthere.ogg" type="audio/ogg"> </audio>
 <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
