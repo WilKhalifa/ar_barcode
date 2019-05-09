@@ -13,10 +13,20 @@
 
     <a-assets>
         <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
+        <audio id="chewie" src="sound/chewbacca.swf.mp3" preload="auto"></audio>
     </a-assets>
+
+    <a-marker type='barcode' value='1'></a-marker>
+
+    <a-marker type='barcode' value='2'></a-marker>
+
+    <a-marker type='barcode' value='3'></a-marker>
+
+    <a-marker type='barcode' value='4'></a-marker>
 
     <a-marker type='barcode' value='7'>
         <a-video src="video/renaud.mp4" rotation='-90 0 0'></a-video>
+        <a-entity sound="src: #chewie"></a-entity>
     </a-marker>
 
     <a-marker id="animated-marker" type='barcode' value='6'>
