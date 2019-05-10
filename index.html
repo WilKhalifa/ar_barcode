@@ -49,7 +49,7 @@
     </a-marker>
 
     <a-marker id="animated-marker" type='barcode' value='6'>
-        <a-video src="misa-mira.mp4" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
+        <a-video play-on-window-click src="misa-mira.mp4" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
     </a-marker>
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
@@ -57,5 +57,6 @@
 </a-scene>
 
 <script src="js/script.js"></script>
+<script src="js/play-on-window-click.js"></script>
 </body>
 </html>
