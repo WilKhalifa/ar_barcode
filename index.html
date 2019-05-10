@@ -38,12 +38,25 @@
         <a-video src="shinobi.mp4" rotation='-90 0 0' height="2.5" width="4.5"></a-video>
     </a-marker>
 
+    <a-marker type="barcode" value="10">
+        <a-sphere
+                animation="property: scale; dir: alternate; dur: 5000; loop: true; to: 4 4 4"
+                geometry="radius: 0.2"
+                material="shader: displacement-offset"
+                myoffset-updater
+                position="0 1.5 -2">
+        </a-sphere>
+        <a-box color="#CCC" width="3" depth="3" height="0.1" position="0 0 -2"></a-box>
+    </a-marker>
+
     <a-marker id="animated-marker" type='barcode' value='6'>
-        <a-videosphere src="misa-mira.mp4"></a-videosphere>
+        <a-video src="misa-mira.mp4" rotation='-90 0 0' height="2.5" width="4.5"></a-video>
     </a-marker>
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
     <a-entity camera></a-entity>
 </a-scene>
+
+<script src="js/script.js"></script>
 </body>
 </html>
