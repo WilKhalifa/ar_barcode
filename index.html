@@ -90,7 +90,7 @@
     </a-marker> -->
 
     <a-marker id="animated-marker" type='barcode' value='1'>
-        <a-video loop="true" webkit-playsinline src="misa-mira.mp4" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
+        <a-video play-on-window-click smooth="true" loop="true" webkit-playsinline src="misa-mira.mp4" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
     </a-marker>
 
 
@@ -98,6 +98,8 @@
     <a-light type="ambient" color="#bbb" intensity="0.8"></a-light>
     <a-light type="directional" intensity="0.6" color="#ffffff" position="0.25 0.5 1"></a-light>
 </a-scene>
+
+<script scr="play-on-window-click.js"></script>
 </body>
 
 </html>
