@@ -71,11 +71,7 @@
     <script type="text/javascript" src="https://cdn.glitch.com/e614a6f8-f4ba-4733-8a7c-e61e5d59427e%2Fbundle.js?1551541439932"></script></head>
 
 <body>
-<a-scene
-        arjs="debugUIEnabled: false; detectionMode: mono;"
-        vr-mode-ui="enabled: false;"
-        renderer="antialias: true; colorManagement: true; sortObjects: true; logarithmicDepthBuffer: true;"
-        embedded
+<a-scene arjs="debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;" vr-mode-ui="enabled: false;" renderer="antialias: true; colorManagement: true; sortObjects: true; logarithmicDepthBuffer: true;" embedded
 >
     <a-camera look-controls-enabled="false" near="0.1" far="20">
         <a-entity position="0 0 -1"></a-entity>
