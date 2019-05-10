@@ -1,4 +1,4 @@
-<!--<!doctype HTML>
+<!doctype HTML>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -13,7 +13,7 @@
 <audio autoplay loop> <source src="sound/panthere.mp3" type="audio/mpeg">
     <source src="sound/panthere.ogg" type="audio/ogg"> </audio>
 <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-<!--<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
     <a-assets>
         <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
@@ -54,15 +54,15 @@
     </a-marker>
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-    <!--<a-entity camera></a-entity>
+    <a-entity camera></a-entity>
 </a-scene>
 
 <script src="js/script.js"></script>
 <script src="js/play-on-window-click.js"></script>
 </body>
-</html>-->
+</html>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -77,7 +77,7 @@
         <a-entity position="0 0 -1"></a-entity>
     </a-camera>
 
-    <a-assets>
+   <!-- <a-assets>
         <video id="test" rotation='90 90 0' autoplay playsinline webkit-playsinline muted loop="true" src="misa-mira.mp4"></video>
     </a-assets>
 
@@ -88,7 +88,12 @@
                 height="0.9"
                 position="0 2 0"
         ></a-video>
+    </a-marker> -->
+
+    <a-marker id="animated-marker" type='barcode' value='1'>
+        <a-video play-on-window-click src="misa-mira.mp4" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
     </a-marker>
+
 
     <!-- This is a pretty good default lighting setup, but feel free to tweak as needed. -->
     <a-light type="ambient" color="#bbb" intensity="0.8"></a-light>
@@ -96,4 +101,4 @@
 </a-scene>
 </body>
 
-</html>
+</html> -->
