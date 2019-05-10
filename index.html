@@ -18,23 +18,28 @@
         <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
     </a-assets>
 
-    <a-marker type='barcode' value='1'></a-marker>
+    <a-marker type='barcode' value='1'>
+        <a-video src="#" rotation='-90 0 0'></a-video>
+    </a-marker>
 
-    <a-marker type='barcode' value='2'></a-marker>
+    <a-marker type='barcode' value='2'>
+        <a-video src="#" rotation='-90 0 0'></a-video>
+    </a-marker>
 
-    <a-marker type='barcode' value='3'></a-marker>
+    <a-marker type='barcode' value='3'>
+        <a-video src="monino.mp4" rotation='-90 0 0'></a-video>
+    </a-marker>
 
-    <a-marker type='barcode' value='4'></a-marker>
+    <a-marker type='barcode' value='4'>
+        <a-video src="#" rotation='-90 0 0'></a-video>
+    </a-marker>
 
-    <a-marker type='barcode' value='7'>
-        <a-video src="video/renaud.mp4" rotation='-90 0 0'></a-video>
+    <a-marker type='barcode' value='5'>
+        <a-video src="shinobi.mp4" rotation='-90 0 0'></a-video>
     </a-marker>
 
     <a-marker id="animated-marker" type='barcode' value='6'>
-        <a-entity
-                gltf-model="#animated-asset"
-                scale="2">
-        </a-entity>
+        <a-video src="misa-mira.mp4" rotation='-90 0 0'></a-video>
     </a-marker>
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
