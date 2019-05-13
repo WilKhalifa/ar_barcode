@@ -15,12 +15,9 @@
 
 <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-    <a-assets>
-        <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
-    </a-assets>
 
     <a-marker type='barcode' value='1'>
-        <a-video src="https://www.youtube.com/embed/ScMzIvxBSi4?autoplay=1" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
+        <a-video src="video/portal" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
     </a-marker>
 
     <a-marker type='barcode' value='2'>
@@ -50,7 +47,7 @@
     </a-marker>
 
     <a-marker id="animated-marker" type='barcode' value='6'>
-        <a-video play-on-window-click src="video/misa-mira.mp4" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
+        <a-video src="video/misa-mira.mp4" rotation='-90 0 0' height="2.5" width="4.5" muted autoplay playsinline></a-video>
     </a-marker>
 
     <a-entity camera></a-entity>
